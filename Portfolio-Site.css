@@ -1,0 +1,97 @@
+/***** GENERAL STYLING *****/
+/* Body */
+body {
+    margin: 0% 
+}
+h1 {
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin-top: 3%;
+    color: #1a1a1a;
+}
+h1.hover {
+    filter: grayscale(5%);
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+.white-text{
+    color: #0717f7;
+}
+p {
+    font-family: Perptua, Rockwell Extra Bold;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+p:hover {
+    transition: transform 1s;
+    transform:scale(1.01)
+}
+.center {
+    text-align: center;
+}
+a {
+    color: blue;
+}
+q {
+    font-style: italic;
+}
+img {
+    filter: grayscale(75%);
+    border-radius: 8px;
+    max-width: 100%;
+    height: 340px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    img:hover{
+        filter: grayscale(5%);
+        transition: transform 1s;
+        transform: scale(1.01);
+    }
+    .Navbar {
+        overflow:hidden;
+        background-color: black;
+        position :fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        -webkit-animation: moveNav 5s;
+        animation: moveNnav 5s;
+    }
+    @keyframes moveNav{
+        from{left:100vw;}
+        to{left: 0vw;}
+    }
+    .Navbar a {
+        float: left;
+        display:block;
+        color: rgb(255, 218, 6);
+        padding: 14px 16px;
+        font-family: Avante Garde, Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+        -webkit-animation: moveNavText 5.75s;
+        animation: moveNavText;
+    }
+    @keyframes moveNavText{
+        from{top:100vw}
+        to{top:0vw}
+    }
+    .Navbar a:hover {
+        background-color: #ff0c0c;
+        color: black;
+        font-weight: bold;
+    }
+    .Navbar a.active{
+        background-color: darkgray;
+    }
+    
+    
+    
